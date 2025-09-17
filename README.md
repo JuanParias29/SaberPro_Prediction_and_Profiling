@@ -1,89 +1,72 @@
-# 📊 Academic Performance Regression
+# 🎓 SaberPro Prediction & Profiling
 
-Este proyecto consiste en un análisis de regresión lineal realizado en **RStudio**, con el objetivo de encontrar el mejor modelo posible para explicar el rendimiento académico de los estudiantes, cumpliendo con todos los supuestos estadísticos del modelo.
+Este proyecto busca desarrollar un **modelo de aprendizaje de máquina** que, a partir de variables **sociales, económicas y académicas** de estudiantes en programas de educación superior, permita:
 
----
-
-## 🎯 Objetivo
-
-Estimar el mejor modelo de **regresión lineal** posible para predecir el rendimiento académico, asegurando el cumplimiento de los supuestos del modelo, la validez estadística de los parámetros y la calidad del ajuste.
+- **Predecir** el puntaje probable en las pruebas Saber Pro.  
+- **Segmentar y clasificar** a los estudiantes para identificar perfiles característicos según su rendimiento, condiciones socioeconómicas y tipo de programa cursado.  
 
 ---
 
-## Estructura del análisis
+## 📊 Base de Datos
 
-El análisis se divide en dos partes principales:
-
-### Parte 1: Análisis previo de los datos (20%)
-
-- Análisis exploratorio de datos (EDA)
-- Gráficos de dispersión entre:
-  - La variable dependiente y las variables explicativas
-  - Las variables explicativas entre sí
-- Interpretación de relaciones observadas:
-  - Identificación de relaciones lineales y no lineales
-  - Evaluación de transformaciones de las variables
-
-### Parte 2: Estimación de modelos, ajuste y validación (80%)
-
-- Estimación del modelo completo con todas las variables
-- Pruebas de hipótesis:
-  - Significancia global del modelo
-  - Significancia individual de los coeficientes
-- Validación de supuestos del modelo:
-  - Linealidad
-  - Homocedasticidad
-  - Independencia
-  - Normalidad de residuos
-- Reestimación del modelo:
-  - Eliminación de variables no significativas
-  - Comparación de bondad de ajuste (R², AIC, BIC, etc.)
-- Interpretación detallada de los parámetros del modelo final
+- **Fuente:** Resultados oficiales de las pruebas Saber Pro.  
+- **Dimensión:** 1,22 millones de registros, 57 variables.  
+- **Descripción:** Información académica, social y económica de estudiantes de educación superior en Colombia que presentaron la prueba Saber Pro entre 2018 y 2022.  
 
 ---
 
-## 🧰 Herramientas utilizadas
+## 🚀 Elevator Pitch  
 
-- **Lenguaje:** R
-- **IDE:** RStudio
-- **Librerías principales:**
-  - `ggplot2` – visualización
-  - `car`, `lmtest` – pruebas estadísticas
-  - `dplyr`, `tidyr` – manipulación de datos
-  - `broom`, `performance` – validación de modelos
+### Preguntas de negocio y análisis
+1. ¿Qué factores sociales, económicos y académicos inciden con mayor fuerza en el desempeño de los estudiantes en las pruebas Saber Pro?  
+2. ¿Cómo se pueden identificar y agrupar perfiles de estudiantes basados en rendimiento y condiciones socioeconómicas mediante técnicas de aprendizaje no supervisado?  
+3. ¿De qué manera esta segmentación puede apoyar a las universidades en el diseño de políticas de admisión, acompañamiento y apoyo financiero para reducir riesgos y potenciar el éxito estudiantil?  
+
+### Justificación
+Responder estas preguntas permite que las instituciones educativas pasen de un enfoque **reactivo** a uno **preventivo**. Al conocer los factores críticos y segmentar perfiles, se pueden diseñar estrategias de **admisión, tutorías y financiamiento basadas en evidencia**, optimizando recursos y mejorando indicadores de retención y desempeño.  
 
 ---
 
-## 📁 Estructura del repositorio
+## 📁 Estructura del Repositorio  
 
 ```bash
-academic-performance-regression/
+saberpro-prediction-profiling/
 │
-├── data/
-│   └── student_habits_performance.xlsx    # Conjunto de datos original
-│   └── data_dictionary.xlsx               # Diccionario de datos
+├── data/                           # Conjunto de datos
+│   ├── raw/                        # Datos originales
+│   ├── processed/                  # Datos limpios y transformados
+│   └── README.md                   # Diccionario de datos
 │
-├── eda/
-│   └── 01_eda_analysis.R                  # Análisis exploratorio de datos
+├── eda/                            # Notebooks de análisis y modelado
+│   ├── 01_eda_analysis.ipynb        # Análisis exploratorio de datos (EDA)
+│   ├── 02_preprocessing.ipynb       # Preparación de datos e ingeniería de características
+│   ├── 03_model_selection.ipynb     # Modelado inicial (pruebas con diferentes algoritmos)
+│   ├── 04_full_model.ipynb          # Modelo final completo (entrenamiento y validación)
+│   └── 05_technical_report.ipynb    # Informe técnico integral (proceso completo en un único notebook)
 │
-├── model/
-│   ├── full_model.R                       # Modelo completo
-│   └── reduced_model.R                    # Modelo reducido
+├── interfaz/                       # Interfaz con Gradio
+│   └── interfaz.py                 # Script principal de la interfaz
 │
-├── reports/
-│   ├── reporte_1_AR.pdf                   # Primer informe del proyecto
-│   └── ...                                # Informes adicionales
+├── docs/                           # Documentación adicional
+│   └── presentacion.pdf            # Presentación final del proyecto
 │
-└── README.md                              # Documentación general del proyecto
-
-
+└── README.md                       # Documentación general del proyecto
 ```
 
-## 👥 Data Scientists
+---
 
-- [Juan Pablo Arias](https://github.com/JuanParias29)
-- Sergio Pardo Hurtado
+## 👥 Data Scientists  
+
+
+- [Juan Pablo Arias](https://github.com/JuanPabloArias) - Scrum Master & Data Analyst
+
+- [Sergio Pardo](https://github.com/SergioPardoHurtado) - Data Scientist (ML & Visualization)
+
+- [Paula Andrea Romero](https://github.com/Andyy870)  - Machine Learning Engineer
+
+- [Laura Beltrán](https://github.com/Andyy870) - Business & Data Strategy Analyst
 
 ---
-## 📚 Análisis de Regresión
-**Docente:** Gabriel Camilo Pérez
+
+## 📚 Técnicas de Machine Learning  
+**Docente:** Oscar Bustos  
