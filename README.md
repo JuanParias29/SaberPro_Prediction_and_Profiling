@@ -37,7 +37,7 @@ saberpro-prediction-profiling/
 │   ├── processed/                  # Datos limpios y transformados
 │   └── README.md                   # Diccionario de datos
 │
-├── eda/                            # Notebooks de análisis y modelado
+├── notebooks/                            # Notebooks de análisis y modelado
 │   ├── 01_eda_analysis.ipynb        # Análisis exploratorio de datos (EDA)
 │   ├── 02_preprocessing.ipynb       # Preparación de datos e ingeniería de características
 │   ├── 03_model_selection.ipynb     # Modelado inicial (pruebas con diferentes algoritmos)
