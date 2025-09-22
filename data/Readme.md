@@ -61,4 +61,4 @@ A continuación, se presenta una tabla descriptiva de los campos del conjunto de
 | MOD_LECTURA_CRITICA_PUNT      | Numérico continuo          | Puntaje en Lectura Crítica. |
 | MOD_INGLES_PUNT               | Numérico continuo          | Puntaje en Inglés. |
 | MOD_COMPETEN_CIUDADA_PUNT     | Numérico continuo          | Puntaje en Competencias Ciudadanas. |
-| PUNTAJE_GLOBAL                | Numérico continuo          | Puntaje global obtenido en la prueba Saber Pro. |
+| PUNTAJE_GLOBAL                | Numérico continuo          | Puntaje global (variable creada). |
