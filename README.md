@@ -38,11 +38,10 @@ saberpro-prediction-profiling/
 │   └── README.md                   # Diccionario de datos
 │
 ├── notebooks/                            # Notebooks de análisis y modelado
-│   ├── 01_eda_analysis.ipynb        # Análisis exploratorio de datos (EDA)
-│   ├── 02_preprocessing.ipynb       # Preparación de datos e ingeniería de características
-│   ├── 03_model_selection.ipynb     # Modelado inicial (pruebas con diferentes algoritmos)
-│   ├── 04_full_model.ipynb          # Modelo final completo (entrenamiento y validación)
-│   └── 05_technical_report.ipynb    # Informe técnico integral (proceso completo en un único notebook)
+│   ├── 01_eda.ipynb        # Análisis exploratorio de datos (EDA)
+│   ├── 02_prediction.ipynb          # Predicción de desempeño (puntaje)
+│   ├── 03_profiling.ipynb           # Perfilamiento / Clustering
+│   └── 04_report.ipynb    # Informe técnico integral (proceso completo en un único notebook)
 │
 ├── interfaz/                       # Interfaz con Gradio
 │   └── interfaz.py                 # Script principal de la interfaz
